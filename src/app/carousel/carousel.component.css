@@ -53,6 +53,171 @@ ul {
 .prev-button{
   padding-left:27%;
 }
+.prev-icon{
+  font-size:24px;
+}
+.next-icon{
+     font-size:24px;
+}
+@media screen and (max-width: 1300px) {
+  .info-text{
+    padding: 8%;
+    width: 39%;
+    padding-left: 20%;
+  }
+  .button-section{
+    margin-top: -19%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .info-text{
+    padding: 7%;
+    width: 39%;
+    padding-left: 20%;
+  }
+  .button-section{
+    margin-top: -20%;
+  }
+}
+@media screen and (max-width: 1150px) {
+   .button-section{
+    margin-top: -23%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .info-text{
+    padding: 6%;
+    width: 40%;
+    padding-left: 20%;
+  }
+  .button-section{
+    margin-top: -24%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .button-section{
+    margin-top: -25%;
+  }
+}
+@media screen and (max-width: 950px) {
+   .button-section{
+    margin-top: -29%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .info-text{
+    padding: 6%;
+    width: 41%;
+    padding-left: 20%;
+  }
+  .button-section{
+    margin-top: -28%;
+  }
+}
+@media screen and (max-width: 875px) {
+   .button-section{
+    margin-top: -30%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .info-text{
+    padding: 6%;
+    width: 47%;
+    padding-left: 20%;
+  }
+  .button-section{
+    margin-top: -35%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  
+  .button-section{
+    margin-top: -40%;
+  }
+  .prev-button {
+    padding-left: 28%;
+}
+.next-button {
+    padding-left: 72%;
+    margin-top: -4%;
+}
+}
+@media screen and (max-width: 750px) {
+   .button-section{
+    margin-top: -43%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .info-text{
+    padding: 5%;
+    width: 50%;
+    padding-left: 20%;
+  }
+  .button-section{
+    margin-top: -41%;
+  }
+  .next-button {
+    padding-left: 72%;
+    margin-top: -4%;
+}
+.prev-button {
+  padding-left: 28%;
+}
+}
+@media screen and (max-width: 650px) {
+  .button-section{
+   margin-top: -47%;
+ }
+}
+@media screen and (max-width: 600px) {
+   .button-section{
+    margin-top: -58%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .info-text{
+    padding: 1%;
+    width: 39%;
+    padding-left: 15%;
+    font-size: 16px;
+  }
+  .button-section{
+    margin-top: -63%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .button-section{
+    margin-top: -67%;
+  }
+}
+.button-sec{
+  display :flex;
+  justify-content :space-between;
+  align-items:center;
+  width:100%;
+  position: absolute;
+    bottom: 12%;
+
+}
+@media screen and (max-height: 550px) {
+
+  .button-section{
+    margin-top: -15%;
+  }
+}
+@media screen and (max-height: 450px) {
+
+  .button-section{
+    margin-top: -12%;
+  }
+}
+@media screen and (max-height: 400px) {
+
+  .button-section{
+    margin-top: -5%;
+  }
+}
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that

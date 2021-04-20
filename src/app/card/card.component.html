@@ -1,7 +1,11 @@
 <div id="t{{cardContent.id}}" class="item" >
-    <div class="col-md-12 image-placeholder">
-        <canvas #canvas width="100" height="100" style="border:1px solid #d3d3d3;"></canvas>
-      <!-- {{cardContent.id}}{{isCenterCard}} -->
+    <div [hidden]='cardContent.id !== isCenterCard' class="col-md-12 image-placeholder">
+               <canvas #canvas    class="canvas-style" style="border:1px solid #d3d3d3;"></canvas>
+      
+    </div>
+    <div [hidden]='cardContent.id === isCenterCard' class="col-md-12 image-placeholder">
+        <canvas #canvasCenter   class="canvas-style-center" style="border:1px solid #d3d3d3;"></canvas>
+            <!-- {{cardContent.id}}{{isCenterCard}} -->
     </div>
     <div *ngIf='cardContent.id !== isCenterCard' class="col-md-12 outer-cards">
         {{cardContent.title}}
