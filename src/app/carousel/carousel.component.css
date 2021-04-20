@@ -59,6 +59,49 @@ ul {
 .next-icon{
      font-size:24px;
 }
+
+@media screen and (max-height: 1000px) {
+
+  .button-section{
+    margin-top: -32%;
+  }
+}
+@media screen and (max-height: 900px) {
+
+  .button-section{
+    margin-top: -27%;
+  }
+}
+@media screen and (max-height: 800px) {
+
+  .button-section{
+    margin-top: -22%;
+  }
+}
+@media screen and (max-height: 800px) {
+
+  .button-section{
+    margin-top: -22%;
+  }
+}
+@media screen and (max-height: 550px) {
+
+  .button-section{
+    margin-top: -15%;
+  }
+}
+@media screen and (max-height: 450px) {
+
+  .button-section{
+    margin-top: -12%;
+  }
+}
+@media screen and (max-height: 400px) {
+
+  .button-section{
+    margin-top: -5%;
+  }
+}
 @media screen and (max-width: 1300px) {
   .info-text{
     padding: 8%;
@@ -142,48 +185,6 @@ ul {
     padding-left: 72%;
     margin-top: -4%;
 }
-}
-@media screen and (max-height: 1000px) {
-
-  .button-section{
-    margin-top: -32%;
-  }
-}
-@media screen and (max-height: 900px) {
-
-  .button-section{
-    margin-top: -27%;
-  }
-}
-@media screen and (max-height: 800px) {
-
-  .button-section{
-    margin-top: -22%;
-  }
-}
-@media screen and (max-height: 800px) {
-
-  .button-section{
-    margin-top: -22%;
-  }
-}
-@media screen and (max-height: 550px) {
-
-  .button-section{
-    margin-top: -15%;
-  }
-}
-@media screen and (max-height: 450px) {
-
-  .button-section{
-    margin-top: -12%;
-  }
-}
-@media screen and (max-height: 400px) {
-
-  .button-section{
-    margin-top: -5%;
-  }
 }
 @media screen and (max-width: 750px) {
    .button-section{
