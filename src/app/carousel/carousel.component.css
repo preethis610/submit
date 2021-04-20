@@ -1,0 +1,60 @@
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+  }
+
+  .carousel-wrapper {
+    overflow: hidden;
+  }
+.hidden-style{
+  overflow-x:hidden;
+}
+  .carousel-inner{
+    display: flex;
+    padding-top: 15%;
+  }
+.carousel-wrapper-style{
+    background-image:  url("../../assets/images/bgimg.jpg");
+    height:100%; 
+    left:12%;
+    right:12%;
+}
+.info-text{
+  padding: 10%;
+  padding-left: 21%;
+  position: absolute;
+  width: 45%;
+  font-size: 18px;
+}
+.carousel-section{
+    position:relative;
+}
+
+:host {
+  display: block;
+}
+
+.open-close-container {
+  border: 1px solid #dddddd;
+  margin-top: 1em;
+  padding: 20px 20px 0px 20px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+}
+.button-section{
+  margin-top:-19%;
+}
+.next-button{
+  padding-left:20%;
+}
+.prev-button{
+  padding-left:27%;
+}
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/

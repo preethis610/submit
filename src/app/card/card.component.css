@@ -1,0 +1,55 @@
+.cell {  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 26px;
+    font-weight: 500;
+    color: rgba(0,0,0,0.87);
+    color: rgba(0,0,0,0.92);
+    user-select: none;  
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    background: #eee;
+    height: 100%;
+    transform-origin: center bottom;
+  }
+  
+   .title-style{
+    word-break: break-word;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 18%;
+  }
+  .title-style-center-card{
+    word-break: break-word;
+    font-size: 19px;
+    padding-top: 18%;
+  }
+  .img-section-center{
+    padding-top: 25%;
+}
+.img-section img{
+    padding-top: 25%;
+}
+  /* .center-card{
+    height: 60vh;
+    margin-top: -25%;
+    width: 20vw;
+    font-weight: bold;
+    font-size: 18px;
+  } */
+  .help-txt{
+      font-size: 10px;
+      padding-top: 10%;
+  }
+  .image-placeholder{
+    padding-top:25%;
+  }
+  .center-card{
+    padding-top:27%;
+  }
+  .outer-cards{
+    padding-top:10%;
+  }
