@@ -143,6 +143,48 @@ ul {
     margin-top: -4%;
 }
 }
+@media screen and (max-height: 1000px) {
+
+  .button-section{
+    margin-top: -32%;
+  }
+}
+@media screen and (max-height: 900px) {
+
+  .button-section{
+    margin-top: -27%;
+  }
+}
+@media screen and (max-height: 800px) {
+
+  .button-section{
+    margin-top: -22%;
+  }
+}
+@media screen and (max-height: 800px) {
+
+  .button-section{
+    margin-top: -22%;
+  }
+}
+@media screen and (max-height: 550px) {
+
+  .button-section{
+    margin-top: -15%;
+  }
+}
+@media screen and (max-height: 450px) {
+
+  .button-section{
+    margin-top: -12%;
+  }
+}
+@media screen and (max-height: 400px) {
+
+  .button-section{
+    margin-top: -5%;
+  }
+}
 @media screen and (max-width: 750px) {
    .button-section{
     margin-top: -43%;
@@ -200,48 +242,7 @@ ul {
     bottom: 12%;
 
 }
-@media screen and (max-height: 1000px) {
 
-  .button-section{
-    margin-top: -32%;
-  }
-}
-@media screen and (max-height: 900px) {
-
-  .button-section{
-    margin-top: -27%;
-  }
-}
-@media screen and (max-height: 800px) {
-
-  .button-section{
-    margin-top: -22%;
-  }
-}
-@media screen and (max-height: 800px) {
-
-  .button-section{
-    margin-top: -22%;
-  }
-}
-@media screen and (max-height: 550px) {
-
-  .button-section{
-    margin-top: -15%;
-  }
-}
-@media screen and (max-height: 450px) {
-
-  .button-section{
-    margin-top: -12%;
-  }
-}
-@media screen and (max-height: 400px) {
-
-  .button-section{
-    margin-top: -5%;
-  }
-}
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
