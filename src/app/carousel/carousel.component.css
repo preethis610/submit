@@ -200,6 +200,30 @@ ul {
     bottom: 12%;
 
 }
+@media screen and (max-height: 1000px) {
+
+  .button-section{
+    margin-top: -32%;
+  }
+}
+@media screen and (max-height: 900px) {
+
+  .button-section{
+    margin-top: -27%;
+  }
+}
+@media screen and (max-height: 800px) {
+
+  .button-section{
+    margin-top: -22%;
+  }
+}
+@media screen and (max-height: 800px) {
+
+  .button-section{
+    margin-top: -22%;
+  }
+}
 @media screen and (max-height: 550px) {
 
   .button-section{
