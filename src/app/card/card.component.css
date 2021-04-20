@@ -53,3 +53,11 @@
   .outer-cards{
     padding-top:10%;
   }
+  .canvas-style{
+    width:102px;
+    height:102px;
+  }
+  .canvas-style-center{
+    width:75px;
+    height:75px;
+  }
