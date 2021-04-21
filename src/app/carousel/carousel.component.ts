@@ -77,7 +77,8 @@ export class CarouselComponent implements AfterViewInit, OnInit {
           width: '20vw',
           maxWidth: '20vw',
           fontWeight: 'bold',
-          fontSize: '18px'
+          borderBottom: '5px solid #ffc300',
+        fontSize: '26px',
 
         })
       ]),
@@ -172,20 +173,22 @@ export class CarouselComponent implements AfterViewInit, OnInit {
     }
 
     return this.builder.build([
-      group([query(this.centerIdString, animate('2s ease', style({
-        maxHeight: '36vh', margin: '7px',
+      group([query(this.centerIdString, animate('0s', style({
+        maxHeight: '36vh', margin: '7px',   borderBottom: 'none',
         maxWidth: '14.58vw', fontSize: '14px', backgroundColor: '#fff', fontWeight: 'normal'
       }))),
-      query(this.nextPrevIdString, animate('2s ease', style({
+      query(this.nextPrevIdString, animate('.4s ease-in-out', style({
         maxHeight: '60vh', marginBottom: '7px',
         height: '60vh',
         marginTop: '-25%',
         width: '20vw',
         maxWidth: '20vw',
         fontWeight: 'bold',
-        fontSize: '18px',
+        fontSize: '26px',
+        borderBottom: '5px solid #ffc300'
+        
       }))),
-      animate(time == null ? '1000ms ease' : 0,
+      animate(time == null ? '.4s ease-in-out' : 0,
         style({ transform: `translateX(${offset}px)` }))
       ]),
     ]);

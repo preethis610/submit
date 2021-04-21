@@ -7,7 +7,9 @@ import { Component, OnInit, Input ,ElementRef,ViewChild} from '@angular/core';
 })
 export class CardComponent implements OnInit {
  @Input() cardContent;
- @Input() isCenterCard;
+ @Input() set isCenterCard(value) {
+  this.centerId = value;
+ }
  @ViewChild('canvas', { static: true }) 
 canvas: ElementRef<HTMLCanvasElement>;
 @ViewChild('canvasCenter', { static: true }) 
@@ -16,7 +18,7 @@ ctx: CanvasRenderingContext2D;
 ctxCenter: CanvasRenderingContext2D;
 requestId;
 interval;
-
+centerId;
 isDisabled = false;
 isOpen = false;
 toggleAnimations() {

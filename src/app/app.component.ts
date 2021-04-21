@@ -9,11 +9,11 @@ export class AppComponent implements OnInit {
   items = [
     { id: 1, title: 'Mobile internet', thumbnail: '../../assets/images/images_thumb.png', pic: '../../assets/images/images.png' },
     { id: 2, title: 'Home internet', thumbnail: '../../assets/images/images_thumb.png', pic: '../../assets/images/images.png' },
-    { id: 3, title: 'Get a device', thumbnail: '../../assets/images/images_thumb.png', pic: '../../assets/images/images.png', help: 'START HERE >' },
+    { id: 3, title: 'Get a device', thumbnail: '../../assets/images/images_thumb.png', pic: '../../assets/images/images.png' },
     { id: 4, title: 'Add a phone-line', thumbnail: '../../assets/images/images_thumb.png', pic: '../../assets/images/images.png' },
     { id: 5, title: 'Upgrade', thumbnail: '../../assets/images/images_thumb.png', pic: '../../assets/images/images.png' },
-    { id: 6, title: 'Support', thumbnail: '../../assets/images/images_thumb.png', pic: '../../assets/images/images.png' },
-    { id: 7, title: 'Contact', thumbnail: '../../assets/images/images_thumb.png', pic: '../../assets/images/images.png' }
+    // { id: 6, title: 'Support', thumbnail: '../../assets/images/images_thumb.png', pic: '../../assets/images/images.png' },
+    // { id: 7, title: 'Contact', thumbnail: '../../assets/images/images_thumb.png', pic: '../../assets/images/images.png' }
 
   ];
 

@@ -43,7 +43,7 @@ padding-left:15%;
         height:66px;
         border-bottom:1px solid #ffffff;
         box-sizing:border-box;
-        font-family:'Courier New', Courier, monospace;
+       
         justify-content :space-between;
         color: black;
 
@@ -53,6 +53,7 @@ padding-left:15%;
         background-color: #f1f1f1;
         margin-right:-10%;
         margin-left:-10%;
+        font-family:'verdana';
       }
       
       .header a {
