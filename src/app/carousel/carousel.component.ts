@@ -251,7 +251,7 @@ export class CarouselComponent implements AfterViewInit, OnInit {
     let currentPosIndex = this.offsetArray.findIndex(obj => obj.id === id);
     let value;
     if (this.offsetArray && this.offsetArray.length > 0 && newPosIndex === -1) {
-      return (this.offsetArray[0].offsetLeft - this.offsetArray[currentPosIndex].offsetLeft) - 200;
+      return (this.offsetArray[0].offsetLeft - this.offsetArray[currentPosIndex].offsetLeft) - this.itemWidth;
     }
 
     if (this.offsetArray && this.offsetArray.length > 0 && currentPosIndex !== -1)
