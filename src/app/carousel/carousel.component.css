@@ -12,10 +12,12 @@ ul {
   overflow-x:hidden;
 }
   .carousel-inner{
+    margin-left: -7px;
     display: flex;
     padding-top: 15%;
   }
 .carousel-wrapper-style{
+  margin-right: 10px;
     background-image:  url("../../assets/images/bgimg.jpg");
     height:100%; 
     left:12%;

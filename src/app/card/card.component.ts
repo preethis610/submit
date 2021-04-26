@@ -1,4 +1,4 @@
-import { Component, OnInit, Input ,ElementRef,ViewChild} from '@angular/core';
+import { Component, OnInit,EventEmitter,Output, Input ,ElementRef,ViewChild} from '@angular/core';
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
@@ -10,6 +10,7 @@ export class CardComponent implements OnInit {
  @Input() set isCenterCard(value) {
   this.centerId = value;
  }
+ @Output() nextPrev = new EventEmitter<number>();
  @ViewChild('canvas', { static: true }) 
 canvas: ElementRef<HTMLCanvasElement>;
 @ViewChild('canvasCenter', { static: true }) 
@@ -51,21 +52,32 @@ if(this.canvasCenter){
 setInterval(() => {
   
 if(this.ctx){
-  this.ctx.lineWidth = 0.07;
+  this.ctx.lineWidth = 1.5;
   this.ctx.strokeStyle= '#d3d3d3';
   this.ctx.beginPath();
   this.ctx.moveTo(0, 0);
-  this.ctx.lineTo(290, 150);
+  this.ctx.lineTo(300, 150);
+  this.ctx.stroke();
+  this.ctx.moveTo(0,0);
+  this.ctx.lineTo(0, 0);
+  this.ctx.moveTo(300,0);
+  this.ctx.lineTo(0, 150);
   this.ctx.stroke();
 }
   
 if(this.ctxCenter){
-  this.ctxCenter.lineWidth = 0.07;
+  this.ctxCenter.lineWidth = 1.5;
   this.ctxCenter.strokeStyle= '#d3d3d3';
   this.ctxCenter.beginPath();
   this.ctxCenter.moveTo(0, 0);
-  this.ctxCenter.lineTo(290, 150);
+  this.ctxCenter.lineTo(300, 150);
   this.ctxCenter.stroke();
+  this.ctxCenter.moveTo(0,0);
+  this.ctxCenter.lineTo(0, 0);
+  this.ctxCenter.moveTo(300,0);
+  this.ctxCenter.lineTo(0, 150);
+  this.ctxCenter.stroke();
+  
 }
 
 
@@ -75,5 +87,8 @@ if(this.ctxCenter){
   // this.ctx.stroke();
   
 }, 200);
+  }
+  nextOrPrev(event) {
+   this.nextPrev.emit(event.offsetX);
   }
 }

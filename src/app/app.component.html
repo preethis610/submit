@@ -1,11 +1,11 @@
 <div class="main-wrap">
   <div class="container-fluid home-cont">
     <app-header></app-header>
-    <app-carousel style="height:100%" 
-      (changeCenterCard)="centerCardUpdate($event)">
-      <ng-container *ngFor="let item of items;let i = index">
-        <ng-container *carouselItem>
-          <app-card [cardContent]="item" [isCenterCard]="centerCard"></app-card>
+    <app-carousel style="height:100%" (animationEnds)="animationEnds($event)"
+      (changeCenterCard)="centerCardUpdate($event)" [np]="nextPrevOffset">
+      <ng-container   *ngFor="let item of items;let i = index">
+        <ng-container  *carouselItem>
+          <app-card [cardContent]="item" [isCenterCard]="centerCard" (nextPrev)="nextOrPrev($event)"></app-card>
         </ng-container>
       </ng-container>
     </app-carousel>
