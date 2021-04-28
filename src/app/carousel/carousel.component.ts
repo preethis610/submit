@@ -316,7 +316,7 @@ export class CarouselComponent implements AfterViewInit, OnInit {
         // change 2nd card with new width and height without animation in case of prev
         // nextOrPrevCard height change
         query(this.nextPrevIdString, animate('0s', style({
-           maxHeight: '23rem', marginBottom: '7px',
+           maxHeight: '28rem', marginBottom: '7px',
           height: '60vh',
           marginTop: '-25%',
           width: '19.9vw',
@@ -461,7 +461,7 @@ export class CarouselComponent implements AfterViewInit, OnInit {
         //change 4th card with new width and height without animation in case of next
         // nextOrPrevCard height change
         query(this.nextPrevIdString, animate('0s', style({
-          maxHeight: '23rem', marginBottom: '7px',
+          maxHeight: '28rem', marginBottom: '7px',
           height: '60vh',
           marginTop: '-25%',
           width: '19.9vw',

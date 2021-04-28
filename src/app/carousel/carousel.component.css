@@ -50,6 +50,7 @@ ul {
 }
 .button-section{
   margin-top:-19%;
+  position: relative;
 }
 .next-button{
   padding-left:20%;
