@@ -267,7 +267,7 @@ export class CarouselComponent implements AfterViewInit, OnInit {
         if (key === 0) {
           firstCard = ele;
           firstCardOffset = this.findOffsetToBeMoved(ele, 1);
-          if (this.itemIdArray[1] > 3 && ele > 3) {
+          if (this.itemIdArray[1] > this.initCenter && ele > this.initCenter) {
             firstCardOffset = firstCardOffset + this.centerCardAddOnWidth;
           }
         }
@@ -275,7 +275,7 @@ export class CarouselComponent implements AfterViewInit, OnInit {
         if (key === 1) {
           secondCard = ele;
           secondCardOffset = this.findOffsetToBeMoved(ele, 2);
-          if (this.itemIdArray[1] > 3 && ele > 3) {
+          if (this.itemIdArray[1] > this.initCenter && ele > this.initCenter) {
             secondCardOffset = secondCardOffset + this.centerCardAddOnWidth;
           }
         }
@@ -283,7 +283,7 @@ export class CarouselComponent implements AfterViewInit, OnInit {
         if (key === 2) {
           thirdCard = ele;
           thirdCardOffset = this.findOffsetToBeMoved(ele, 3);
-          if (this.itemIdArray[1] < 3 && ele <= 3) {
+          if (this.itemIdArray[1] < this.initCenter && ele <= this.initCenter) {
             thirdCardOffset = thirdCardOffset - this.centerCardAddOnWidth;
           }
         }
@@ -291,7 +291,7 @@ export class CarouselComponent implements AfterViewInit, OnInit {
         if (key === 3) {
           fourthCard = ele;
           fourthCardOffset = this.findOffsetToBeMoved(ele, 4);
-          if (this.itemIdArray[1] < 3 && ele <= 3) {
+          if (this.itemIdArray[1] < this.initCenter && ele <= this.initCenter) {
             fourthCardOffset = fourthCardOffset - this.centerCardAddOnWidth;
           }
         }
@@ -316,7 +316,7 @@ export class CarouselComponent implements AfterViewInit, OnInit {
         // change 2nd card with new width and height without animation in case of prev
         // nextOrPrevCard height change
         query(this.nextPrevIdString, animate('0s', style({
-          maxHeight: '60vh', marginBottom: '7px',
+           maxHeight: '23rem', marginBottom: '7px',
           height: '60vh',
           marginTop: '-25%',
           width: '19.9vw',
@@ -337,7 +337,7 @@ export class CarouselComponent implements AfterViewInit, OnInit {
         //centerCard remove height change
         query(this.centerIdString, animate('0s', style({
           margin: '7px',
-          maxHeight: '36vh', borderBottom: 'none', height: '36vh', width: '14.58vw',
+          maxHeight: '19rem', borderBottom: 'none', height: '36vh', width: '14.58vw',
           maxWidth: '14.58vw', fontSize: '20px', backgroundColor: '#fff', fontWeight: 'normal',
 
         }))),
@@ -378,7 +378,7 @@ export class CarouselComponent implements AfterViewInit, OnInit {
           ]),
           // move t6 to 1st card position in case of prev
           query('#t' + leftSixthCard, animate(this.timing, style({
-            maxHeight: '36vh', margin: '7px', borderBottom: 'none', opacity: 1,
+            maxHeight: '19rem', margin: '7px', borderBottom: 'none', opacity: 1,
             maxWidth: '14.58vw', fontSize: '20px', backgroundColor: '#fff', fontWeight: 'normal',
             transform: 'translateX(' + leftSixthCardOffset + 'px)'
           }))),
@@ -461,7 +461,7 @@ export class CarouselComponent implements AfterViewInit, OnInit {
         //change 4th card with new width and height without animation in case of next
         // nextOrPrevCard height change
         query(this.nextPrevIdString, animate('0s', style({
-          maxHeight: '60vh', marginBottom: '7px',
+          maxHeight: '23rem', marginBottom: '7px',
           height: '60vh',
           marginTop: '-25%',
           width: '19.9vw',
@@ -482,16 +482,16 @@ export class CarouselComponent implements AfterViewInit, OnInit {
         //centerCard remove height change
         query(this.centerIdString, animate('0s', style({
           margin: '7px',
-          maxHeight: '36vh', borderBottom: 'none', height: '36vh', width: '14.58vw',
+          maxHeight: '19rem', borderBottom: 'none', height: '36vh', width: '14.58vw',
           maxWidth: '14.58vw', fontSize: '20px', backgroundColor: '#fff', fontWeight: 'normal',
         }))),
         group([
-                   // move 1st card to left(out of view) by width 201+14 in case of next
+                   // move 1st card to left(out of view) in case of next
           // 1 to left 
           query('#t' + firstCard, animate(this.timing, style({
             transform: 'translateX(' + firstCardOffset + 'px)'
           }))),
-          // Move center card to left (2nd in view) by width 201+14 in case of next 
+          // Move center card to left (2nd in view)  in case of next 
           // 3 to 2
           query(this.centerIdString, animate(this.timing, style({
             transform: 'translateX(' + thirdCardOffset + 'px)'
@@ -501,8 +501,7 @@ export class CarouselComponent implements AfterViewInit, OnInit {
           query(this.nextPrevIdString, animate(this.timing, style({
             transform: 'translateX(' + fourthCardOffset + 'px)',
           }))),
-
-          // move 5th card to left(4th in view) by width 201+14 in case of next
+          // move 5th card to left(4th in view) in case of next
           // 5 to 4
           query('#t' + fifthCard, [
             animate(this.timing, style({
@@ -520,7 +519,7 @@ export class CarouselComponent implements AfterViewInit, OnInit {
           ]),
           // move t7 to last card position in case of next
           query('#t7', animate(this.timing, style({
-            maxHeight: '36vh', margin: '7px', borderBottom: 'none', opacity: 1,
+            maxHeight: '19rem', margin: '7px', borderBottom: 'none', opacity: 1,
             maxWidth: '14.58vw', fontSize: '20px', backgroundColor: '#fff', fontWeight: 'normal',
             transform: 'translateX(' + rightSeventhCardOffset + 'px)'
           }))),

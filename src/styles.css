@@ -3,6 +3,7 @@
   padding: 0;
   width: 14.58vw;
   height: 36vh;
+  max-height:19rem;
   margin:7px;
   border-radius: 16px 16px 12px 12px;
   background-color: #fff;  

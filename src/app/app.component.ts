@@ -31,12 +31,10 @@ export class AppComponent implements OnInit {
     this.nextPrevOffset = event;
   }
   animationEnds(event){
-    let first =    this.items.findIndex(obj => obj.id === event[0]);
-    let last =    this.items.findIndex(obj => obj.id === event[4]);
-      this.items[5].title=this.items[last].title;
-      this.items[6].title=this.items[first].title;
-      console.log( this.items[5].title);
-      console.log( this.items[6].title);
+    let first =this.items.findIndex(obj => obj.id === event[0]);
+    let last = this.items.findIndex(obj => obj.id === event[this.items.length-3]);
+    this.items[this.items.length-2].title=this.items[last].title;
+    this.items[this.items.length-1].title=this.items[first].title;
    
    
   }
