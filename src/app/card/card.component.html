@@ -1,6 +1,6 @@
 <div  (dragend)="nextOrPrev($event)" draggable="true" id="t{{cardContent.id}}"  [ngClass]="cardContent.id === centerId?'big-card':'small-card'">
      <div  id="s{{cardContent.id}}" class="d-flex flex-column align-items-stretch my-box oc" [ngClass]="cardContent.id === centerId?'my-center-box':'oc'">
-      <div class="p-2 my-flex-st">   <img alt="Card Image" class="card-image"  src="../../assets/images/small-card.png"></div>
+      <div class="p-2 my-flex-st">   <img alt="Card Image" class="card-image"  src="../../assets/images/sc.png"></div>
       <div  *ngIf='cardContent.id === centerId' class="p-2  center-card">{{cardContent.title}}</div>
       <div  *ngIf='cardContent.id !== centerId' class="p-2  card-config outer-cards">{{cardContent.title}}</div>
       <div  *ngIf='cardContent.id === centerId' class="p-2 help-txt">START HERE &nbsp;&nbsp;></div>
