@@ -1,7 +1,7 @@
-<div class="main-wrap">
-  <div class="container-fluid home-cont">
-    <app-header></app-header>
-    <app-carousel style="height:100%" (animationEnds)="animationEnds($event)"
+
+<app-header></app-header>
+  <div class="container">
+      <app-carousel style="display:inline;height:auto" (animationEnds)="animationEnds($event)"
       (changeCenterCard)="centerCardUpdate($event)" [np]="nextPrevOffset">
       <ng-container   *ngFor="let item of items;let i = index">
         <ng-container  *carouselItem>
@@ -10,4 +10,3 @@
       </ng-container>
     </app-carousel>
   </div>
-</div>

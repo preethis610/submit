@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
   nextPrevOffset;
@@ -25,7 +25,6 @@ export class AppComponent implements OnInit {
   }
   centerCardUpdate(event) {
     this.centerCard = event;
-    console.log(event);
   }
   nextOrPrev(event){
     this.nextPrevOffset = event;

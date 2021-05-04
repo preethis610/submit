@@ -1,23 +1,33 @@
-<div class="row header">
-  <div class="col-md-2 ">
-    <!-- <img class="logo-img" src="../../assets/images/logo.png" /> -->
-    <canvas #canvas  height="75" width="75"  class="logo-img" style="background-color: #ffc300;border:3px solid #fff;"></canvas>
-      
-  </div>
-  <div class="col-md-6">
-    <a class="active">Store</a>
-    <a>Product & Services</a>
-    <a>Help & Support</a>
-  </div>
-  <div class="col-md-4">
-    <a>
-      <i class="fa fa-search fa-x" aria-hidden="true"> </i>
-    </a>
-    <a>PERSONAL &nbsp;
-      <i class="fa fa-angle-down fa-x" aria-hidden="true"></i>
-    </a>
-  </div>
+<div class="top-row">
+  <span>&nbsp;</span>
 </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand logo">
+      <img src="./assets/images/mtn-logo.png"></a>
+    <button (click)="showHide()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+      class="navbar-toggler">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarSupportedContent" class="collapse navbar-collapse" [ngClass]="show ?  'show':''">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a aria-current="page" href="#" class="nav-link">Store</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Products &amp; Services</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Help &amp; Support</a></li>
+      </ul>
 
+      <ul class="list-inline mt-4 mb-2 search">
+        <li class="list-inline-item me-4">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        <li class="list-inline-item me-4">
+          <div class="input-group mb-2">
+            <a href="#" id="example" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle">
+              <img src="assets/images/dot.png" class="status-icon"> Personal </a>
+          </div>
+        </li>
+      </ul>
 
-
+    </div>
+  </div>
+</nav>

@@ -1,28 +1,22 @@
-<section class="carousel-wrapper" class="carousel-wrapper-style">
-  <div class="carousel-section">
-    <div class="info-text">What are you <b>here to do?</b></div>
-      <div  class="carousel-inner" #carousel>
-
-
-  <div id="myli{{i+1}}"  class="carousel-item-custom" *ngFor="let item of items;let i=index" 
-  >
- 
-  <ng-container  [ngTemplateOutlet]="item.tpl"></ng-container>
-      </div>
-
+<div id="myCarousel" class="carousel">
+  <div class="items" #carousel>
+    <div class="carousel-text">
+      <span>What are you</span>
+      <strong>here to do?</strong>
     </div>
-</div>
-</section>
-<div class="row button-section">
-  <div class="col-md-6 prev-button">
-      <i class="fa fa-chevron-circle-left fa-2x prev-icon" (click)="prev(1)" aria-hidden="true"> </i>
-  </div>
- 
-  <div class="col-md-6 next-button">
-  
-         
-      <i class="fa fa-chevron-circle-right fa-2x next-icon" (click)="next(1)" aria-hidden="true"> </i>
-   
+    <div id="myli{{i+1}}" class="carousel-item-custom" *ngFor="let item of items;let i=index">
+      <ng-container [ngTemplateOutlet]="item.tpl"></ng-container>
+    </div>
   </div>
 </div>
-
+<div class="buttons-section">
+  <button (click)="prev()">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-width="2" d="M15 19l-7-7 7-7"></path>
+    </svg></button>
+  <button (click)="next()">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-width="2" d="M9 5l7 7-7 7"></path>
+    </svg>
+  </button>
+</div>
