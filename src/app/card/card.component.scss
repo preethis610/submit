@@ -68,39 +68,106 @@
   .oc{
        height: 18rem;
   }
+  .canvas-style{
+    width:75px;
+    height:75px;
+  }
    .card-image{
     filter: saturate(0);
     height: 80px;
    }
-  @media (max-width: 766px){
+  @media (max-width: 706px){
 
     .oc {
-        width: 74px;
+        width: 90px;
     }
     .card-image{
-      height:55px;
+      height:65px;
+    }
+    .canvas-style{
+      width:60px;
+      height:60px;
     }
     
       }
-  @media (max-width: 1079px){
+      @media (min-width: 720px){
+
+        .oc {
+            width: 96px;
+        }
+        .card-image{
+          height:70px;
+        }
+        .canvas-style{
+          width:60px;
+          height:60px;
+        }
+        
+          }
+      @media (min-width: 748px){
+
+        .oc {
+            width: 100px;
+        }
+        .card-image{
+          height:80px;
+        }
+        .canvas-style{
+          width:60px;
+          height:60px;
+        }
+       }
+  @media (min-width: 950px){
 
     .oc {
         width: 110px;
     }
     .card-image{
-      height:55px;
+      height:80px;
+    }
+    .canvas-style{
+      width:60px;
+      height:60px;
+    }
+   }
+   @media (min-width: 990px){
+
+    .oc {
+        width: 135px;
+    }
+    .card-image{
+      height:80px;
+    }
+    .canvas-style{
+      width:65px;
+      height:65px;
     }
    }
   @media (min-width: 1080px){
     .oc {
-        width: 165px;
+        width: 200px;
     }
+    .canvas-style{
+      width:69px;
+      height:69px;
+    }
+    .card-image{
+      height:80px;
+    }
+
   }
  
 @media (min-width: 1200px){
   .oc {
       width: 200px;
      }
+     .canvas-style{
+      width:75px;
+      height:75px;
+    }
+    .card-image{
+      height:80px;
+    }
    }
   .my-box > div {
     flex: 1;
@@ -158,5 +225,6 @@
     letter-spacing: -.2px;
     line-height: 24px;
    }
+  
  
 

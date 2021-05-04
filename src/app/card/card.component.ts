@@ -52,8 +52,8 @@ if(this.canvasCenter){
 setInterval(() => {
   
 if(this.ctx){
-  this.ctx.lineWidth = 1.5;
-  this.ctx.strokeStyle= '#d3d3d3';
+  this.ctx.lineWidth = 2;
+  this.ctx.strokeStyle= '#A9A9A9';
   this.ctx.beginPath();
   this.ctx.moveTo(0, 0);
   this.ctx.lineTo(300, 150);
@@ -66,8 +66,8 @@ if(this.ctx){
 }
   
 if(this.ctxCenter){
-  this.ctxCenter.lineWidth = 1.5;
-  this.ctxCenter.strokeStyle= '#d3d3d3';
+  this.ctxCenter.lineWidth = 2;
+  this.ctxCenter.strokeStyle= '#A9A9A9';
   this.ctxCenter.beginPath();
   this.ctxCenter.moveTo(0, 0);
   this.ctxCenter.lineTo(300, 150);
