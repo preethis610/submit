@@ -88,6 +88,9 @@
       width:60px;
       height:60px;
     }
+    .center-card{
+      margin-top:24%
+    }
     
       }
       @media (min-width: 720px){
@@ -101,6 +104,9 @@
         .canvas-style{
           width:60px;
           height:60px;
+        }
+        .center-card{
+          margin-top:23%
         }
         
           }
@@ -116,6 +122,9 @@
           width:60px;
           height:60px;
         }
+        .center-card{
+          margin-top:22%
+        }
        }
   @media (min-width: 950px){
 
@@ -128,6 +137,9 @@
     .canvas-style{
       width:60px;
       height:60px;
+    }
+    .center-card{
+      margin-top:18%
     }
    }
    @media (min-width: 990px){
@@ -142,6 +154,9 @@
       width:65px;
       height:65px;
     }
+    .center-card{
+      margin-top:18%
+    }
    }
   @media (min-width: 1080px){
     .oc {
@@ -153,6 +168,9 @@
     }
     .card-image{
       height:80px;
+    }
+    .center-card{
+      margin-top:11%
     }
 
   }
@@ -168,7 +186,25 @@
     .card-image{
       height:80px;
     }
+    .center-card{
+      margin-top:10%
+    }
    }
+   @media (min-width: 1300px){
+    .oc {
+        width: 240px;
+       }
+       .canvas-style{
+        width:75px;
+        height:75px;
+      }
+      .card-image{
+        height:85px;
+      }
+      .center-card{
+        margin-top:8%
+      }
+     }
   .my-box > div {
     flex: 1;
     justify-content: center;
