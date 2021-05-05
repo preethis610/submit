@@ -63,10 +63,12 @@
   .small-card{
     font-weight: bold !important;
     font-size: 18px;
-  }
+    }
  
   .oc{
        height: 18rem;
+       width: 240px;
+       transition:  width .4s ease-in-out;
   }
   .canvas-style{
     width:75px;
