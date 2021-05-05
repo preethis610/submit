@@ -120,7 +120,7 @@ export class CarouselComponent implements AfterViewInit, OnInit {
     console.log(this.moveOffsetValues);
     return this.builder.build([
       group([
-        query('#t6', animate('.4s ease-in-out', style({
+        query('#t6', animate('0s ease-in-out', style({
           transform: 'translateX(' + six + 'px)',
           opacity: 0
         }))),
@@ -408,9 +408,8 @@ export class CarouselComponent implements AfterViewInit, OnInit {
         group([
           // 1 to left 
           query('#t' + firstCard, animate(this.timing, style({
-            transform: 'translateX(' + firstCardOffset + 'px)',
-           // transition: 'opacity .25s ease-in-out'
-          }))),
+            transform: 'translateX(' + firstCardOffset + 'px)'
+                    }))),
           // 3 to 2
           query(this.centerIdString, animate(this.timing, style({
             transform: 'translateX(' + thirdCardOffset + 'px)'
