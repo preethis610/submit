@@ -120,27 +120,27 @@ export class CarouselComponent implements AfterViewInit, OnInit {
     console.log(this.moveOffsetValues);
     return this.builder.build([
       group([
-        query('#t6', animate('0s ease-in-out', style({
+        query('#t6', animate('.4s ease-in-out', style({
           transform: 'translateX(' + six + 'px)',
           opacity: 0
         }))),
-        query('#t' + this.itemIdArray[1], animate('0s ease-in-out', style({
+        query('#t' + this.itemIdArray[1], animate('.4s ease-in-out', style({
           transform: 'translateX(' + two + 'px)',
-        }))),
-        query('#t' + this.itemIdArray[2], animate('0s ease-in-out', style({
+          }))),
+        query('#t' + this.itemIdArray[2], animate('.4s ease-in-out', style({
           transform: 'translateX(' + three + 'px)',
-        }))),
-        query('#t' + this.itemIdArray[3], animate('0s ease-in-out', style({
+          }))),
+        query('#t' + this.itemIdArray[3], animate('.4s ease-in-out', style({
           transform: 'translateX(' + four + 'px)',
-        }))),
-        query('#t' + this.itemIdArray[4], animate('0s ease-in-out', style({
+          }))),
+        query('#t' + this.itemIdArray[4], animate('.4s ease-in-out', style({
           transform: 'translateX(' + five + 'px)',
-        }))),
-        query('#t7', animate('0s ease-in-out', style({
+          }))),
+        query('#t7', animate('.4s ease-in-out', style({
           transform: 'translateX(' + seven + 'px)',
           opacity: 0
         }))),
-        query('#s' + this.itemIdArray[2], animate('0s ease-in-out', style({
+        query('#s' + this.itemIdArray[2], animate('.4s ease-in-out', style({
           transform: 'scale(2)',
         }))),
 
